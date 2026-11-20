@@ -74,6 +74,7 @@
                 Delivery information
             </h4>
             <form>
+            <div>
                 <label for="firstname">Full Name</label><br>
                 <input type="text" id="firstname" required="required" placeholder="First- and Last name">
 
@@ -85,8 +86,8 @@
 
                 <label for="housenumber">House</label><br>
                 <input type="number" id="housenumber" required="required" placeholder="House number">
-            </form>
-            <div>
+            </div>
+            <div class="payment">
                 <label for="payment">Payment options</label><br>
                 <select id="payment">
                     <option>Debit card</option>
@@ -103,9 +104,10 @@
                 <input type="radio" name="gender" value="non-binary"> Non-binary<br>
                 <input type="radio" name="gender" value="undisclosed" checked="checked"> Undisclosed<br>
             </div>
-            <button type="submit">
-            <img src="path/to/your-button-image.png"> Place order
-</button>
+            </form>
+            <button type="submit" value="Send">
+            <img src="img/checkmark.jpg"> Place order
+            </button>
         </section>
     </main>
     <hr>
