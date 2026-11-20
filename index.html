@@ -1,74 +1,117 @@
 <!DOCTYPE HTML>
 <html lang="en">
-   <head>
-       <title>Super duper burger house</title>
-       <meta charset="utf-8"/>
-       <link rel="stylesheet" href="public/css/burger.css">
-   </head>
+
+<head>
+    <title>Super duper burger house</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="public/css/burger.css">
+</head>
+
 <body>
-   <header>
-      <h1>
+    <header>
+        <h1>
             Put the fries in the bag bro
-      </h1>
-   </header>
-<main>
-    <h3>
-        Select your burger
-    </h3>
-    <p>
-        This is where you should (and must) choose your burger
-    </p>
-    <section class="burgers">
-        <article class="burger">
-            <h3>
-                Nastypatty
-            </h3>
-            <img src="img/nastypatty.jpeg">
-            <ul>
-                <li>100% vegan</li>
-                <li>20 kcal</li>
-                <li>"No barf"-guarantee </li>
-            </ul>
-        </article>
-
-        <article class="burger">
-            <h3>
-                Real Burger
-            </h3>
-            <img src="img/realburger.jpeg">
-            <ul>
-                <li>100% real</li>
-                <li>0 kcal</li>
-                <li>Slop </li>
-            </ul>
-        </article>
-
-                <article class="burger">
-            <h3>
-                Jhon
-            </h3>
-            <img src="img/faceburger.jpeg">
-            <ul>
-                <li>Delicious</li>
-                <li>801 kcal</li>
-                <li>Can talk </li>
-            </ul>
-        </article>
-
-    </section>
-
-    <section class="customer">
+        </h1>
+    </header>
+    <main>
         <h3>
-    Customer details
+            Select your burger
         </h3>
         <p>
-            Enter sensitive information
+            This is where you should (and must) choose your burger
         </p>
-      </section>
-</main>
-<hr>
-   <footer>
-      End notes
-   </footer>
+        <section class="burgers">
+            <article class="burger">
+                <h3>
+                    Nastypatty
+                </h3>
+                <img src="img/nastypatty.jpeg">
+                <ul>
+                    <li>100% vegan</li>
+                    <li>20 kcal</li>
+                    <li>"No barf"-guarantee </li>
+                </ul>
+            </article>
+
+            <article class="burger">
+                <h3>
+                    Real Burger
+                </h3>
+                <img src="img/realburger.jpeg">
+                <ul>
+                    <li>100% real</li>
+                    <li>0 kcal</li>
+                    <li>Slop </li>
+                    <li>No allergenes </li>
+                </ul>
+            </article>
+
+            <article class="burger">
+                <h3>
+                    Jhon
+                </h3>
+                <img src="img/faceburger.jpeg">
+                <ul>
+                    <li>Delicious</li>
+                    <li>801 kcal</li>
+                    <li>Can talk </li>
+                    <li>
+                        Contains meat
+                    </li>
+                </ul>
+            </article>
+
+        </section>
+
+        <section>
+            <h3>
+                Customer details
+            </h3>
+            <p>
+                Enter sensitive information
+            </p>
+            <h4>
+                Delivery information
+            </h4>
+            <form>
+                <label for="firstname">Full Name</label><br>
+                <input type="text" id="firstname" required="required" placeholder="First- and Last name">
+
+                <label for="email">E-mail</label><br>
+                <input type="email" id="email" required="required" placeholder="E-mail adress">
+
+                <label for="street">Street</label><br>
+                <input type="text" id="street" required="required" placeholder="Street name">
+
+                <label for="housenumber">House</label><br>
+                <input type="number" id="housenumber" required="required" placeholder="House number">
+            </form>
+            <div>
+                <label for="payment">Payment options</label><br>
+                <select id="payment">
+                    <option>Debit card</option>
+                    <option selected="selected">Credit card</option>
+                    <option>Apple pay</option>
+                    <option>Klarna</option>
+                    <option>Cash</option>
+                </select>
+            </div>
+            <div>
+                <label for="gender">Gender</label><br>
+                <input type="radio" name="gender" value="male"> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="non-binary"> Non-binary<br>
+                <input type="radio" name="gender" value="undisclosed" checked="checked"> Undisclosed<br>
+            </div>
+            <button type="submit">
+            <img src="path/to/your-button-image.png"> Place order
+</button>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        &copy; 2026 Super duper burger house
+    </footer>
 </body>
+
 </html>
