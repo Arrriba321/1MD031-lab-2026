@@ -9,17 +9,17 @@
 
 <body>
     <header>
-        <h1>
-            Put the fries in the bag bro
-        </h1>
+        <h1>Hurger Bouse</h1>
     </header>
     <main>
+        <section class="welcome">
         <h3>
             Select your burger
         </h3>
         <p>
             This is where you should (and must) choose your burger
         </p>
+        </section>
         <section class="burgers">
             <article class="burger">
                 <h3>
@@ -27,9 +27,9 @@
                 </h3>
                 <img src="img/nastypatty.jpeg">
                 <ul>
-                    <li>100% vegan</li>
                     <li>20 kcal</li>
                     <li>"No barf"-guarantee </li>
+                    <li class="allergenes">Contains <span id="nuts">nuts</span></li>
                 </ul>
             </article>
 
@@ -42,7 +42,7 @@
                     <li>100% real</li>
                     <li>0 kcal</li>
                     <li>Slop </li>
-                    <li>No allergenes </li>
+                    <li class="allergenes">Cointains all allergenes </li>
                 </ul>
             </article>
 
@@ -55,15 +55,14 @@
                     <li>Delicious</li>
                     <li>801 kcal</li>
                     <li>Can talk </li>
-                    <li>
-                        Contains meat
-                    </li>
+                    <li class="allergenes">Contains <span id="meat">meat</span></li>
                 </ul>
             </article>
 
         </section>
 
-        <section>
+        <section class="order">
+    
             <h3>
                 Customer details
             </h3>
@@ -74,39 +73,39 @@
                 Delivery information
             </h4>
             <form>
-            <div>
-                <label for="firstname">Full Name</label><br>
-                <input type="text" id="firstname" required="required" placeholder="First- and Last name">
+                <div>
+                    <label for="firstname">Full Name</label><br>
+                    <input type="text" id="firstname" required="required" placeholder="First- and Last name">
 
-                <label for="email">E-mail</label><br>
-                <input type="email" id="email" required="required" placeholder="E-mail adress">
+                    <label for="email">E-mail</label><br>
+                    <input type="email" id="email" required="required" placeholder="E-mail adress">
 
-                <label for="street">Street</label><br>
-                <input type="text" id="street" required="required" placeholder="Street name">
+                    <label for="street">Street</label><br>
+                    <input type="text" id="street" required="required" placeholder="Street name">
 
-                <label for="housenumber">House</label><br>
-                <input type="number" id="housenumber" required="required" placeholder="House number">
-            </div>
-            <div class="payment">
-                <label for="payment">Payment options</label><br>
-                <select id="payment">
-                    <option>Debit card</option>
-                    <option selected="selected">Credit card</option>
-                    <option>Apple pay</option>
-                    <option>Klarna</option>
-                    <option>Cash</option>
-                </select>
-            </div>
-            <div>
-                <label for="gender">Gender</label><br>
-                <input type="radio" name="gender" value="male"> Male<br>
-                <input type="radio" name="gender" value="female"> Female<br>
-                <input type="radio" name="gender" value="non-binary"> Non-binary<br>
-                <input type="radio" name="gender" value="undisclosed" checked="checked"> Undisclosed<br>
-            </div>
+                    <label for="housenumber">House</label><br>
+                    <input type="number" id="housenumber" required="required" placeholder="House number">
+                </div>
+                <div class="payment">
+                    <label for="payment">Payment options</label><br>
+                    <select id="payment">
+                        <option>Debit card</option>
+                        <option selected="selected">Credit card</option>
+                        <option>Apple pay</option>
+                        <option>Klarna</option>
+                        <option>Cash</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="gender">Gender</label><br>
+                    <input type="radio" name="gender" value="male"> Male<br>
+                    <input type="radio" name="gender" value="female"> Female<br>
+                    <input type="radio" name="gender" value="non-binary"> Non-binary<br>
+                    <input type="radio" name="gender" value="undisclosed" checked="checked"> Undisclosed<br>
+                </div>
             </form>
             <button type="submit" value="Send">
-            <img src="img/checkmark.jpg"> Place order
+                <img src="img/checkmark.png.webp"> Place order
             </button>
         </section>
     </main>
